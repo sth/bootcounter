@@ -1,0 +1,9 @@
+[Unit]
+Description=Count number of boots
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/counterfile-inc /usr/lib/counterfiles/boot.count
+
+[Install]
+WantedBy=multi-user.target
