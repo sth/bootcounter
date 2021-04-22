@@ -1,0 +1,10 @@
+#!/bin/dash
+set -eu
+
+COUNTFN="$1"
+if [ -e "$COUNTFN" ]; then
+	COUNT="`cat "$COUNTFN"`"
+else
+	COUNT=0
+fi
+echo $(( $COUNT + 1 )) > $COUNTFN
