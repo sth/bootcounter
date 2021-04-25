@@ -8,8 +8,10 @@ run() {
 	"$@"
 }
 
-run cp counterfile-inc /usr/local/bin/
+run cp bootcounter-increment /usr/local/bin/
 
 run cp bootcounter.service /etc/systemd/system/
 echo "maybe run:"
+echo "   systemctl daemon-reload"
 echo "   systemctl enable bootcounter.service"
+

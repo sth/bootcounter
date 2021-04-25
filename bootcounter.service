@@ -3,7 +3,7 @@ Description=Count number of boots
 
 [Service]
 Type=oneshot
-ExecStart=/usr/local/bin/counterfile-inc /usr/lib/counterfiles/boot.count
+ExecStart=/usr/local/bin/bootcounter-increment
 
 [Install]
 WantedBy=multi-user.target
